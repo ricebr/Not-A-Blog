@@ -1,0 +1,22 @@
+title: 'NotABlog'
+description: 'Blog para começar no mundo de ricing em distribuições Linux'
+
+# configurations
+timezone: America/Brasilia
+
+baseurl: '/'
+
+excerpt_separator: '<!--more-->'
+
+# exclude folders for ci
+exclude: [vendor]
+
+# permalink
+permalink: :title/
+
+sass:
+  dir: _sass
+  style: compressed
+
+# Build settings
+markdown: kramdown
