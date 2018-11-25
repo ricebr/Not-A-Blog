@@ -1,0 +1,30 @@
+{% assign words = content | number_of_words %}
+
+{% for post in site.posts %}
+  <section class="mini-post">
+    <h2 class="mini-post-title">
+      <a href="{{ post.url }}" class="mini-post-title-link">{{ post.title }}</a>
+    </h2>
+    <!-- /mini-post-title -->
+
+    <p class="mini-post-teaser">
+      {{ post.description }}
+    </p>
+    <!-- /mini-post-teaser -->
+
+    <section class="mini-post-meta">
+      <span class="mini-post-meta-author-name">{{ post.author }}</span>
+      <time class="mini-post-meta-date" datetime="{{ post.date }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      <ul class="mini-post-meta-tags">
+        {% for tag in post.tags %}
+          <li class="mini-post-meta-tag">
+            <a href="" class="mini-post-meta-tag-link">{{ tag }}</a>
+          </li>
+          <!-- /mini-post-meta-tag -->
+        {% endfor %}
+      </ul>
+    </section>
+    <!-- /mini-post-meta -->
+  </section>
+  <!-- /mini-post -->
+{% endfor %}

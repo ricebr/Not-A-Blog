@@ -1,3 +1,18 @@
 *, :after, :before {
   box-sizing: border-box;
 }
+
+html, body {
+  font-family: 'Source Code Pro', monospace;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+a {
+  color: #F8C045;
+  text-decoration: none;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  transition: color 0.1s linear;
+}
