@@ -4,7 +4,7 @@ description: 'Blog para começar no mundo de ricing em distribuições Linux'
 # configurations
 timezone: America/Brasilia
 
-baseurl: '/'
+baseurl: 'https://ricebr.github.io/Not-A-Blog'
 
 excerpt_separator: '<!--more-->'
 
